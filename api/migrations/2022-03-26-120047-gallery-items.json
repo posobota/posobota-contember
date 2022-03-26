@@ -1,0 +1,43 @@
+{
+	"formatVersion": 3,
+	"modifications": [
+		{
+			"modification": "createRelationInverseSide",
+			"entityName": "Gallery",
+			"relation": {
+				"name": "items",
+				"ownedBy": "gallery",
+				"type": "OneHasMany",
+				"target": "GalleryItem",
+				"orderBy": [
+					{
+						"path": [
+							"position"
+						],
+						"direction": "asc"
+					}
+				]
+			}
+		},
+		{
+			"modification": "patchAclSchema",
+			"patch": [
+				{
+					"op": "add",
+					"path": "/roles/admin/entities/Gallery/operations/create/items",
+					"value": true
+				},
+				{
+					"op": "add",
+					"path": "/roles/admin/entities/Gallery/operations/read/items",
+					"value": true
+				},
+				{
+					"op": "add",
+					"path": "/roles/admin/entities/Gallery/operations/update/items",
+					"value": true
+				}
+			]
+		}
+	]
+}

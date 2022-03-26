@@ -33,7 +33,7 @@ export type SeoFormProps = {
 	imageUrlDerivedFrom?: DerivedFieldLinkProps['sourceField']
 	titleTransform?: DerivedFieldLinkProps['transform'],
 	seoFieldsProps?: SeoFieldsProps
-	seoPage: string
+	seoPage?: string
 }
 
 function getSlugPrefix(environment: Environment, unpersistedHardPrefix?: string) {
@@ -140,7 +140,7 @@ export const Seo = Component<SeoFormProps>(
 				</>
 			}
 			<SeoFields field="seo" {...seoFieldsProps} />
-			<LinkButton to={seoPage}>{locale['Advanced website SEO']}</LinkButton>
+			{seoPage && <LinkButton to={seoPage}>{locale['Advanced website SEO']}</LinkButton>}
 		</Section>
 	),
 	'Seo',

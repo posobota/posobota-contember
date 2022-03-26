@@ -6,6 +6,10 @@ export const Navigation = () => (
 	<Menu>
 		<Menu.Item title={'Events'}>
 			<Menu.Item title={'Seasons'} to="seasons" />
+			<Menu.Item title={'Episodes'} to="episodes/list" />
+		</Menu.Item>
+		<Menu.Item title={'Merch'}>
+			<Menu.Item title={'Products'} to="products/list" />
 		</Menu.Item>
 		<Menu.Item title={'CMS'}>
 			<Menu.Item title={locale['Pages']} to="pageList" />

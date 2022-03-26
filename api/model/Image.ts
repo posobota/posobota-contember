@@ -11,10 +11,11 @@ export class Image {
 
 export class Gallery {
 	slug = def.stringColumn().unique()
+	items = def.oneHasMany(GalleryItem, 'gallery').orderBy('position')
 }
 
 export class GalleryItem {
 	image = def.manyHasOne(Image).setNullOnDelete()
-	gallery = def.manyHasOne(Gallery).setNullOnDelete()
+	gallery = def.manyHasOne(Gallery, 'items').setNullOnDelete()
 	position = def.intColumn()
 }

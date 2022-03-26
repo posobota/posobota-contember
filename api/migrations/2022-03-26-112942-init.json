@@ -91,6 +91,44 @@
 		{
 			"modification": "createEntity",
 			"entity": {
+				"name": "Partner",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "partner"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Speaker",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "speaker"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
 				"name": "Button",
 				"primary": "id",
 				"primaryColumn": "id",
@@ -319,6 +357,82 @@
 		{
 			"modification": "createEntity",
 			"entity": {
+				"name": "Season",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "season"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Episode",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "episode"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Talk",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "talk"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "TalkProposal",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "talk_proposal"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
 				"name": "Image",
 				"primary": "id",
 				"primaryColumn": "id",
@@ -333,6 +447,44 @@
 					}
 				},
 				"tableName": "image"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Gallery",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "gallery"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "GalleryItem",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "gallery_item"
 			}
 		},
 		{
@@ -414,6 +566,25 @@
 		{
 			"modification": "createEntity",
 			"entity": {
+				"name": "Product",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "product"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
 				"name": "Seo",
 				"primary": "id",
 				"primaryColumn": "id",
@@ -447,6 +618,44 @@
 					}
 				},
 				"tableName": "setting"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Tag",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "tag"
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "City",
+				"primary": "id",
+				"primaryColumn": "id",
+				"unique": {},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"nullable": false,
+						"type": "Uuid",
+						"columnType": "uuid"
+					}
+				},
+				"tableName": "city"
 			}
 		},
 		{
@@ -489,6 +698,193 @@
 				"name": "slug",
 				"columnName": "slug",
 				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "homepageUrl",
+				"columnName": "homepage_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "facebookUrl",
+				"columnName": "facebook_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "twitterUrl",
+				"columnName": "twitter_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "githubUrl",
+				"columnName": "github_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Partner",
+			"field": {
+				"name": "linkedinUrl",
+				"columnName": "linkedin_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "description",
+				"columnName": "description",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "homepageUrl",
+				"columnName": "homepage_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "facebookUrl",
+				"columnName": "facebook_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "twitterUrl",
+				"columnName": "twitter_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "githubUrl",
+				"columnName": "github_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Speaker",
+			"field": {
+				"name": "linkedinUrl",
+				"columnName": "linkedin_url",
+				"nullable": true,
 				"type": "String",
 				"columnType": "text"
 			}
@@ -776,6 +1172,314 @@
 		},
 		{
 			"modification": "createColumn",
+			"entityName": "Season",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Season",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Season",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "startsAt",
+				"columnName": "starts_at",
+				"nullable": false,
+				"type": "DateTime",
+				"columnType": "timestamptz"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "endsAt",
+				"columnName": "ends_at",
+				"nullable": false,
+				"type": "DateTime",
+				"columnType": "timestamptz"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "address",
+				"columnName": "address",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "youtubeCode",
+				"columnName": "youtube_code",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "netteForumUrl",
+				"columnName": "nette_forum_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Episode",
+			"field": {
+				"name": "facebookUrl",
+				"columnName": "facebook_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "startsAt",
+				"columnName": "starts_at",
+				"nullable": false,
+				"type": "DateTime",
+				"columnType": "timestamptz"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "durationMinutes",
+				"columnName": "duration_minutes",
+				"nullable": false,
+				"type": "Integer",
+				"columnType": "integer"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "presentationUrl",
+				"columnName": "presentation_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Talk",
+			"field": {
+				"name": "youtubeCode",
+				"columnName": "youtube_code",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "speakerName",
+				"columnName": "speaker_name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "speakerDescription",
+				"columnName": "speaker_description",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "talkName",
+				"columnName": "talk_name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "talkDescription",
+				"columnName": "talk_description",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "duration",
+				"columnName": "duration",
+				"nullable": false,
+				"type": "Integer",
+				"columnType": "integer"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "presentationUrl",
+				"columnName": "presentation_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "homepageUrl",
+				"columnName": "homepage_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "twitterUrl",
+				"columnName": "twitter_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "githubUrl",
+				"columnName": "github_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "TalkProposal",
+			"field": {
+				"name": "linkedinUrl",
+				"columnName": "linkedin_url",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
 			"entityName": "Image",
 			"field": {
 				"name": "url",
@@ -838,6 +1542,28 @@
 				"nullable": true,
 				"type": "String",
 				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Gallery",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "GalleryItem",
+			"field": {
+				"name": "position",
+				"columnName": "position",
+				"nullable": true,
+				"type": "Integer",
+				"columnType": "integer"
 			}
 		},
 		{
@@ -932,6 +1658,50 @@
 		},
 		{
 			"modification": "createColumn",
+			"entityName": "Product",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Product",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Product",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Product",
+			"field": {
+				"name": "price",
+				"columnName": "price",
+				"nullable": false,
+				"type": "Integer",
+				"columnType": "integer"
+			}
+		},
+		{
+			"modification": "createColumn",
 			"entityName": "Seo",
 			"field": {
 				"name": "title",
@@ -986,6 +1756,72 @@
 			}
 		},
 		{
+			"modification": "createColumn",
+			"entityName": "Tag",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Tag",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Tag",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "City",
+			"field": {
+				"name": "slug",
+				"columnName": "slug",
+				"nullable": false,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "City",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "City",
+			"field": {
+				"name": "title",
+				"columnName": "title",
+				"nullable": true,
+				"type": "String",
+				"columnType": "text"
+			}
+		},
+		{
 			"modification": "createRelation",
 			"entityName": "Article",
 			"owningSide": {
@@ -1035,6 +1871,108 @@
 				"target": "Article",
 				"type": "OneHasOne",
 				"nullable": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Partner",
+			"owningSide": {
+				"name": "logo",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "logo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Partner",
+			"owningSide": {
+				"name": "content",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Content",
+				"joiningColumn": {
+					"columnName": "content_id",
+					"onDelete": "set null"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Partner",
+			"owningSide": {
+				"name": "seo",
+				"nullable": false,
+				"type": "OneHasOne",
+				"target": "Seo",
+				"joiningColumn": {
+					"columnName": "seo_id",
+					"onDelete": "restrict"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Partner",
+			"owningSide": {
+				"name": "gallery",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Gallery",
+				"joiningColumn": {
+					"columnName": "gallery_id",
+					"onDelete": "restrict"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Speaker",
+			"owningSide": {
+				"name": "logo",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "logo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Speaker",
+			"owningSide": {
+				"name": "content",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Content",
+				"joiningColumn": {
+					"columnName": "content_id",
+					"onDelete": "set null"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Speaker",
+			"owningSide": {
+				"name": "seo",
+				"nullable": false,
+				"type": "OneHasOne",
+				"target": "Seo",
+				"joiningColumn": {
+					"columnName": "seo_id",
+					"onDelete": "restrict"
+				},
+				"orphanRemoval": true
 			}
 		},
 		{
@@ -1437,6 +2375,212 @@
 		},
 		{
 			"modification": "createRelation",
+			"entityName": "Season",
+			"owningSide": {
+				"name": "coverPhoto",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "cover_photo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Episode",
+			"owningSide": {
+				"name": "season",
+				"nullable": false,
+				"type": "ManyHasOne",
+				"target": "Season",
+				"joiningColumn": {
+					"columnName": "season_id",
+					"onDelete": "restrict"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Episode",
+			"owningSide": {
+				"name": "coverPhoto",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "cover_photo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Episode",
+			"owningSide": {
+				"name": "content",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Content",
+				"joiningColumn": {
+					"columnName": "content_id",
+					"onDelete": "set null"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Episode",
+			"owningSide": {
+				"name": "city",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "City",
+				"joiningColumn": {
+					"columnName": "city_id",
+					"onDelete": "restrict"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Episode",
+			"owningSide": {
+				"name": "seo",
+				"nullable": false,
+				"type": "OneHasOne",
+				"target": "Seo",
+				"joiningColumn": {
+					"columnName": "seo_id",
+					"onDelete": "restrict"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Talk",
+			"owningSide": {
+				"name": "episode",
+				"nullable": false,
+				"type": "ManyHasOne",
+				"target": "Episode",
+				"joiningColumn": {
+					"columnName": "episode_id",
+					"onDelete": "restrict"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Talk",
+			"owningSide": {
+				"name": "coverPhoto",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "cover_photo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Talk",
+			"owningSide": {
+				"name": "content",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Content",
+				"joiningColumn": {
+					"columnName": "content_id",
+					"onDelete": "set null"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Talk",
+			"owningSide": {
+				"name": "seo",
+				"nullable": false,
+				"type": "OneHasOne",
+				"target": "Seo",
+				"joiningColumn": {
+					"columnName": "seo_id",
+					"onDelete": "restrict"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Talk",
+			"owningSide": {
+				"type": "ManyHasMany",
+				"name": "tags",
+				"target": "Tag",
+				"joiningTable": {
+					"tableName": "talk_tags",
+					"joiningColumn": {
+						"columnName": "talk_id",
+						"onDelete": "cascade"
+					},
+					"inverseJoiningColumn": {
+						"columnName": "tag_id",
+						"onDelete": "cascade"
+					}
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "TalkProposal",
+			"owningSide": {
+				"name": "speakerPhoto",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "speaker_photo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "GalleryItem",
+			"owningSide": {
+				"name": "image",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "image_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "GalleryItem",
+			"owningSide": {
+				"name": "gallery",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Gallery",
+				"joiningColumn": {
+					"columnName": "gallery_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
 			"entityName": "Link",
 			"owningSide": {
 				"name": "article",
@@ -1546,6 +2690,64 @@
 		},
 		{
 			"modification": "createRelation",
+			"entityName": "Product",
+			"owningSide": {
+				"name": "coverPhoto",
+				"nullable": true,
+				"type": "ManyHasOne",
+				"target": "Image",
+				"joiningColumn": {
+					"columnName": "cover_photo_id",
+					"onDelete": "set null"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Product",
+			"owningSide": {
+				"name": "content",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Content",
+				"joiningColumn": {
+					"columnName": "content_id",
+					"onDelete": "set null"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Product",
+			"owningSide": {
+				"name": "seo",
+				"nullable": false,
+				"type": "OneHasOne",
+				"target": "Seo",
+				"joiningColumn": {
+					"columnName": "seo_id",
+					"onDelete": "restrict"
+				},
+				"orphanRemoval": true
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Product",
+			"owningSide": {
+				"name": "gallery",
+				"nullable": true,
+				"type": "OneHasOne",
+				"target": "Gallery",
+				"joiningColumn": {
+					"columnName": "gallery_id",
+					"onDelete": "restrict"
+				}
+			}
+		},
+		{
+			"modification": "createRelation",
 			"entityName": "Seo",
 			"owningSide": {
 				"name": "ogImage",
@@ -1599,6 +2801,206 @@
 		},
 		{
 			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Partner_slug_6ee769"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"homepageUrl"
+				],
+				"name": "unique_Partner_homepageUrl_fe26ec"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"facebookUrl"
+				],
+				"name": "unique_Partner_facebookUrl_82b2b8"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"twitterUrl"
+				],
+				"name": "unique_Partner_twitterUrl_e8ac03"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"githubUrl"
+				],
+				"name": "unique_Partner_githubUrl_4d2e13"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Partner",
+			"unique": {
+				"fields": [
+					"linkedinUrl"
+				],
+				"name": "unique_Partner_linkedinUrl_b03d92"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Speaker_slug_a608f3"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"homepageUrl"
+				],
+				"name": "unique_Speaker_homepageUrl_9be24a"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"facebookUrl"
+				],
+				"name": "unique_Speaker_facebookUrl_adc236"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"twitterUrl"
+				],
+				"name": "unique_Speaker_twitterUrl_60d49b"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"githubUrl"
+				],
+				"name": "unique_Speaker_githubUrl_faaff2"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Speaker",
+			"unique": {
+				"fields": [
+					"linkedinUrl"
+				],
+				"name": "unique_Speaker_linkedinUrl_61df37"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Season",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Season_slug_9523d2"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Episode",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Episode_slug_932056"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Episode",
+			"unique": {
+				"fields": [
+					"youtubeCode"
+				],
+				"name": "unique_Episode_youtubeCode_d20834"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Episode",
+			"unique": {
+				"fields": [
+					"netteForumUrl"
+				],
+				"name": "unique_Episode_netteForumUrl_c7afaa"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Episode",
+			"unique": {
+				"fields": [
+					"facebookUrl"
+				],
+				"name": "unique_Episode_facebookUrl_0ffc3b"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Talk",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Talk_slug_5543b8"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Talk",
+			"unique": {
+				"fields": [
+					"youtubeCode"
+				],
+				"name": "unique_Talk_youtubeCode_509b14"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Gallery",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Gallery_slug_ec20f6"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
 			"entityName": "Menu",
 			"unique": {
 				"fields": [
@@ -1629,12 +3031,42 @@
 		},
 		{
 			"modification": "createUniqueConstraint",
+			"entityName": "Product",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Product_slug_c4f1cf"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
 			"entityName": "Setting",
 			"unique": {
 				"fields": [
 					"unique"
 				],
 				"name": "unique_Setting_unique_be242d"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "Tag",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_Tag_slug_3a4dee"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "City",
+			"unique": {
+				"fields": [
+					"slug"
+				],
+				"name": "unique_City_slug_692adb"
 			}
 		},
 		{
@@ -1661,6 +3093,17 @@
 										"content": true,
 										"seo": true
 									},
+									"read": {
+										"id": true,
+										"publishAt": true,
+										"headline": true,
+										"coverPhoto": true,
+										"lead": true,
+										"slug": true,
+										"linkedFrom": true,
+										"content": true,
+										"seo": true
+									},
 									"update": {
 										"id": true,
 										"publishAt": true,
@@ -1672,14 +3115,107 @@
 										"content": true,
 										"seo": true
 									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Partner": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
+										"content": true,
+										"seo": true,
+										"gallery": true
+									},
 									"read": {
 										"id": true,
-										"publishAt": true,
-										"headline": true,
-										"coverPhoto": true,
-										"lead": true,
 										"slug": true,
-										"linkedFrom": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
+										"content": true,
+										"seo": true,
+										"gallery": true
+									},
+									"update": {
+										"id": true,
+										"slug": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
+										"content": true,
+										"seo": true,
+										"gallery": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Speaker": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"description": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
+										"content": true,
+										"seo": true
+									},
+									"read": {
+										"id": true,
+										"slug": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"description": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
+										"content": true,
+										"seo": true
+									},
+									"update": {
+										"id": true,
+										"slug": true,
+										"logo": true,
+										"name": true,
+										"title": true,
+										"description": true,
+										"homepageUrl": true,
+										"facebookUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true,
 										"content": true,
 										"seo": true
 									},
@@ -1696,13 +3232,13 @@
 										"target": true,
 										"type": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"label": true,
 										"target": true,
 										"type": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"label": true,
 										"target": true,
@@ -1726,7 +3262,7 @@
 										"message": true,
 										"consent": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"createdAt": true,
 										"viewed": true,
@@ -1737,7 +3273,7 @@
 										"message": true,
 										"consent": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"createdAt": true,
 										"viewed": true,
@@ -1759,11 +3295,11 @@
 										"id": true,
 										"parts": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"parts": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"parts": true
 									},
@@ -1781,14 +3317,14 @@
 										"json": true,
 										"references": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"content": true,
 										"json": true,
 										"references": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"content": true,
@@ -1808,13 +3344,13 @@
 										"type": true,
 										"target": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"contentPart": true,
 										"type": true,
 										"target": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"contentPart": true,
 										"type": true,
@@ -1842,7 +3378,7 @@
 										"testimonials": true,
 										"blogPosts": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"type": true,
@@ -1857,7 +3393,7 @@
 										"testimonials": true,
 										"blogPosts": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"type": true,
@@ -1885,13 +3421,13 @@
 										"image": true,
 										"contentBlock": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"image": true,
 										"contentBlock": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"image": true,
@@ -1910,13 +3446,13 @@
 										"button": true,
 										"contentBlock": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"button": true,
 										"contentBlock": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"button": true,
@@ -1937,7 +3473,7 @@
 										"icon": true,
 										"contentBlock": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"primaryText": true,
@@ -1945,7 +3481,7 @@
 										"icon": true,
 										"contentBlock": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"primaryText": true,
@@ -1967,14 +3503,14 @@
 										"author": true,
 										"contentBlock": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"content": true,
 										"author": true,
 										"contentBlock": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"content": true,
@@ -1994,13 +3530,13 @@
 										"title": true,
 										"image": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"name": true,
 										"title": true,
 										"image": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"name": true,
 										"title": true,
@@ -2019,17 +3555,201 @@
 										"blogPost": true,
 										"contentBlock": true
 									},
+									"read": {
+										"id": true,
+										"order": true,
+										"blogPost": true,
+										"contentBlock": true
+									},
 									"update": {
 										"id": true,
 										"order": true,
 										"blogPost": true,
 										"contentBlock": true
 									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Season": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true
+									},
 									"read": {
 										"id": true,
-										"order": true,
-										"blogPost": true,
-										"contentBlock": true
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true
+									},
+									"update": {
+										"id": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Episode": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"season": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true,
+										"content": true,
+										"startsAt": true,
+										"endsAt": true,
+										"city": true,
+										"address": true,
+										"youtubeCode": true,
+										"netteForumUrl": true,
+										"facebookUrl": true,
+										"seo": true
+									},
+									"read": {
+										"id": true,
+										"season": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true,
+										"content": true,
+										"startsAt": true,
+										"endsAt": true,
+										"city": true,
+										"address": true,
+										"youtubeCode": true,
+										"netteForumUrl": true,
+										"facebookUrl": true,
+										"seo": true
+									},
+									"update": {
+										"id": true,
+										"season": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"title": true,
+										"content": true,
+										"startsAt": true,
+										"endsAt": true,
+										"city": true,
+										"address": true,
+										"youtubeCode": true,
+										"netteForumUrl": true,
+										"facebookUrl": true,
+										"seo": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Talk": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"episode": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"content": true,
+										"startsAt": true,
+										"durationMinutes": true,
+										"presentationUrl": true,
+										"youtubeCode": true,
+										"seo": true,
+										"tags": true
+									},
+									"read": {
+										"id": true,
+										"episode": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"content": true,
+										"startsAt": true,
+										"durationMinutes": true,
+										"presentationUrl": true,
+										"youtubeCode": true,
+										"seo": true,
+										"tags": true
+									},
+									"update": {
+										"id": true,
+										"episode": true,
+										"slug": true,
+										"coverPhoto": true,
+										"name": true,
+										"content": true,
+										"startsAt": true,
+										"durationMinutes": true,
+										"presentationUrl": true,
+										"youtubeCode": true,
+										"seo": true,
+										"tags": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"TalkProposal": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"speakerPhoto": true,
+										"speakerName": true,
+										"speakerDescription": true,
+										"talkName": true,
+										"talkDescription": true,
+										"duration": true,
+										"presentationUrl": true,
+										"homepageUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true
+									},
+									"read": {
+										"id": true,
+										"speakerPhoto": true,
+										"speakerName": true,
+										"speakerDescription": true,
+										"talkName": true,
+										"talkDescription": true,
+										"duration": true,
+										"presentationUrl": true,
+										"homepageUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true
+									},
+									"update": {
+										"id": true,
+										"speakerPhoto": true,
+										"speakerName": true,
+										"speakerDescription": true,
+										"talkName": true,
+										"talkDescription": true,
+										"duration": true,
+										"presentationUrl": true,
+										"homepageUrl": true,
+										"twitterUrl": true,
+										"githubUrl": true,
+										"linkedinUrl": true
 									},
 									"delete": true,
 									"customPrimary": true
@@ -2047,6 +3767,15 @@
 										"type": true,
 										"alt": true
 									},
+									"read": {
+										"id": true,
+										"url": true,
+										"width": true,
+										"height": true,
+										"size": true,
+										"type": true,
+										"alt": true
+									},
 									"update": {
 										"id": true,
 										"url": true,
@@ -2056,14 +3785,49 @@
 										"type": true,
 										"alt": true
 									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Gallery": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true
+									},
 									"read": {
 										"id": true,
-										"url": true,
-										"width": true,
-										"height": true,
-										"size": true,
-										"type": true,
-										"alt": true
+										"slug": true
+									},
+									"update": {
+										"id": true,
+										"slug": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"GalleryItem": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"image": true,
+										"gallery": true,
+										"position": true
+									},
+									"read": {
+										"id": true,
+										"image": true,
+										"gallery": true,
+										"position": true
+									},
+									"update": {
+										"id": true,
+										"image": true,
+										"gallery": true,
+										"position": true
 									},
 									"delete": true,
 									"customPrimary": true
@@ -2079,14 +3843,14 @@
 										"article": true,
 										"page": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"type": true,
 										"url": true,
 										"article": true,
 										"page": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"type": true,
 										"url": true,
@@ -2105,12 +3869,12 @@
 										"position": true,
 										"items": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"position": true,
 										"items": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"position": true,
 										"items": true
@@ -2129,14 +3893,14 @@
 										"url": true,
 										"menu": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"order": true,
 										"label": true,
 										"url": true,
 										"menu": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"order": true,
 										"label": true,
@@ -2159,6 +3923,15 @@
 										"blocks": true,
 										"seo": true
 									},
+									"read": {
+										"id": true,
+										"publishAt": true,
+										"slug": true,
+										"role": true,
+										"linkedFrom": true,
+										"blocks": true,
+										"seo": true
+									},
 									"update": {
 										"id": true,
 										"publishAt": true,
@@ -2168,14 +3941,45 @@
 										"blocks": true,
 										"seo": true
 									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Product": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"name": true,
+										"slug": true,
+										"coverPhoto": true,
+										"title": true,
+										"content": true,
+										"seo": true,
+										"price": true,
+										"gallery": true
+									},
 									"read": {
 										"id": true,
-										"publishAt": true,
+										"name": true,
 										"slug": true,
-										"role": true,
-										"linkedFrom": true,
-										"blocks": true,
-										"seo": true
+										"coverPhoto": true,
+										"title": true,
+										"content": true,
+										"seo": true,
+										"price": true,
+										"gallery": true
+									},
+									"update": {
+										"id": true,
+										"name": true,
+										"slug": true,
+										"coverPhoto": true,
+										"title": true,
+										"content": true,
+										"seo": true,
+										"price": true,
+										"gallery": true
 									},
 									"delete": true,
 									"customPrimary": true
@@ -2194,7 +3998,7 @@
 										"article": true,
 										"page": true
 									},
-									"update": {
+									"read": {
 										"id": true,
 										"title": true,
 										"description": true,
@@ -2204,7 +4008,7 @@
 										"article": true,
 										"page": true
 									},
-									"read": {
+									"update": {
 										"id": true,
 										"title": true,
 										"description": true,
@@ -2227,17 +4031,67 @@
 										"logo": true,
 										"footerCopyright": true
 									},
+									"read": {
+										"id": true,
+										"unique": true,
+										"logo": true,
+										"footerCopyright": true
+									},
 									"update": {
 										"id": true,
 										"unique": true,
 										"logo": true,
 										"footerCopyright": true
 									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"Tag": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true,
+										"name": true,
+										"title": true
+									},
 									"read": {
 										"id": true,
-										"unique": true,
-										"logo": true,
-										"footerCopyright": true
+										"slug": true,
+										"name": true,
+										"title": true
+									},
+									"update": {
+										"id": true,
+										"slug": true,
+										"name": true,
+										"title": true
+									},
+									"delete": true,
+									"customPrimary": true
+								}
+							},
+							"City": {
+								"predicates": {},
+								"operations": {
+									"create": {
+										"id": true,
+										"slug": true,
+										"name": true,
+										"title": true
+									},
+									"read": {
+										"id": true,
+										"slug": true,
+										"name": true,
+										"title": true
+									},
+									"update": {
+										"id": true,
+										"slug": true,
+										"name": true,
+										"title": true
 									},
 									"delete": true,
 									"customPrimary": true
@@ -2295,6 +4149,17 @@
 							"ContactMessage": {
 								"predicates": {},
 								"operations": {
+									"read": {
+										"id": true,
+										"createdAt": true,
+										"viewed": true,
+										"firstName": true,
+										"lastName": true,
+										"email": true,
+										"phone": true,
+										"message": true,
+										"consent": true
+									},
 									"create": {
 										"id": true,
 										"createdAt": true,
@@ -2316,17 +4181,6 @@
 										"phone": false,
 										"message": false,
 										"consent": false
-									},
-									"read": {
-										"id": true,
-										"createdAt": true,
-										"viewed": true,
-										"firstName": true,
-										"lastName": true,
-										"email": true,
-										"phone": true,
-										"message": true,
-										"consent": true
 									},
 									"delete": false
 								}

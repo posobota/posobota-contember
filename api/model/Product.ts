@@ -9,7 +9,7 @@ export class Product {
     coverPhoto = def.manyHasOne(Image).setNullOnDelete()
     title = def.stringColumn()
 	content = def.oneHasOne(Content).removeOrphan().setNullOnDelete()
-	seo = def.oneHasOne(Seo, 'article').notNull().removeOrphan()
+	seo = def.oneHasOne(Seo).notNull().removeOrphan()
     price = def.intColumn().notNull()
     gallery = def.oneHasOne(Gallery)
 }
